@@ -978,8 +978,6 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>✅ Search Results:- {search}\n🦹 Requested By:- {message.from_user.mention}\n🦉 Result Show In:- {remaining_seconds} Seconds\n⚡ Powered By:- {message.chat.title} \n🎬 Total File Found :- {total_results} \n♻️ Message Delete In 5 Minutes ⚠️\n\n</b>"
-        else:
             cap = f"<b>✅ Search Results:- {search}\n🦹 Requested By:- {message.from_user.mention}\n🦉 Result Show In:- {remaining_seconds} Seconds\n⚡ Powered By:- {message.chat.title} \n🎬 Total File Found :- {total_results} \n♻️ Message Delete In 5 Minutes ⚠️\n\n</b>"
             cap+="<b><u>🍿 Your Movie Files 👇</u></b>\n\n"
             for file in files:

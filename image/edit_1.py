@@ -1,4 +1,4 @@
-from PIL import Image, ImageEnhance, ImageFilter 
+from import Image, ImageEnhance, ImageFilter 
 from pyrogram.enums import ChatAction
 import shutil
 import cv2

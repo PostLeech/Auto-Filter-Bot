@@ -538,9 +538,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "my_about":
         buttons = [[
-            InlineKeyboardButton('📊 sᴛᴀᴛᴜs', callback_data='stats')
+            InlineKeyboardButton('♻️ Status', callback_data='stats'),
+            InlineKeyboardButton('🚀 Telegraph', callback_data='stats')
         ],[
-            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -609,6 +610,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🌧️ Sticker', callback_data='gen_pass'),
             InlineKeyboardButton('🔗 Short URL', callback_data='urlshort'),
             InlineKeyboardButton('⚡ Fancy Font', callback_data='source') 
+         ], [
+            InlineKeyboardButton('🎨 Remove BG', callback_data='removebgx'), 
+             InlineKeyboardButton('🌐 Open Al', callback_data='urlshort') 
          ], [
             InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]

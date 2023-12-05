@@ -24,6 +24,10 @@ class script(object):
   
  Note: 
  * This Feature Work Only Support Group.</b>"""
+
+    TELE_TXT = """<b>You Can Use This Feature To Upload Image On Telegraph 
+
+ • /telegraph - Send Me Picture Or Video Under 5MB.</b>""" 
     
     NEW_GROUP_TXT = """#NewGroup
 ★ Title: {}

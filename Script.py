@@ -30,22 +30,13 @@ class script(object):
  • /telegraph - Send Me Picture Or Video Under 5MB.</b>""" 
 
     REMOVEBGX_TXT = """
-You Can Use This Feature To Remove Background Form Any Photos.
+You Can Use This Feature To Search GitHub Repo.
 
 <b>Feature:</b>
-1. Bright
-2. Black And White
-3. Sticker
-4. Blur
-5. Invert
-6. Glitch
-7. Pencil
-8. Cartoon
-9. Rotate
-10. Contrast
-11. Remove Image Background
-And Many More....
-Just Send Me Any Photo.</b>"""
+
+ /repo: <b>Use This Commands To Search Github Repo</b> 
+ Example:<code>/repo auto filter...</code> 
+</b>"""
     
     URLSHORT_TXT = """<b>You Can Use This Feature To Meke Short URL. 
   

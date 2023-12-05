@@ -28,6 +28,38 @@ class script(object):
     TELE_TXT = """<b>You Can Use This Feature To Upload Image On Telegraph 
 
  • /telegraph - Send Me Picture Or Video Under 5MB.</b>""" 
+
+    REMOVEBGX_TXT = """
+You Can Use This Feature To Remove Background Form Any Photos.
+
+<b>Feature:</b>
+1. Bright
+2. Black And White
+3. Sticker
+4. Blur
+5. Invert
+6. Glitch
+7. Pencil
+8. Cartoon
+9. Rotate
+10. Contrast
+11. Remove Image Background
+And Many More....
+Just Send Me Any Photo.</b>"""
+    
+    URLSHORT_TXT = """<b>You Can Use This Feature To Meke Short URL. 
+  
+ Commands And Usage: 
+  
+ /short: <b>Use This Commands With Your Link To Get Short Links</b> 
+ Example:<code>/short https://youtu.be/example...</code> 
+</b>"""
+    
+    STICKER_TXT = """<b>You Can Use This Feature To Find Any Stickers ID.  
+   
+ ⭕ How To Use
+ ◉ /stickerid  Reply To Any Sticker With This Commands
+ </b>"""
     
     NEW_GROUP_TXT = """#NewGroup
 ★ Title: {}

@@ -607,12 +607,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🦉 User Command', callback_data='user_command'),
             InlineKeyboardButton('🦹 Admin Command', callback_data='admin_command')
         ],[
-            InlineKeyboardButton('🌧️ Sticker', callback_data='gen_pass'),
+            InlineKeyboardButton('🌧️ Sticker', callback_data='sticker'),
             InlineKeyboardButton('🔗 Short URL', callback_data='urlshort'),
             InlineKeyboardButton('⚡ Fancy Font', callback_data='source') 
          ], [
             InlineKeyboardButton('🎨 Remove BG', callback_data='removebgx'), 
-             InlineKeyboardButton('🌐 Open Al', callback_data='urlshort') 
+             InlineKeyboardButton('🌐 Open Al', callback_data='openai') 
          ], [
             InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
@@ -653,6 +653,39 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
+    elif query.data == "urlshort":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.URLSHORT_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
+    elif query.data == "removebgx":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.REMOVEBGX_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
+    elif query.data == "sticker":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.STICKER_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('≼ ʙᴀᴄᴋ', callback_data='help')

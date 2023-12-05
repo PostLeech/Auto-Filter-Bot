@@ -603,10 +603,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('User Command', callback_data='user_command'),
-            InlineKeyboardButton('Admin Command', callback_data='admin_command')
+            InlineKeyboardButton('🦉 User Command', callback_data='user_command'),
+            InlineKeyboardButton('🦹 Admin Command', callback_data='admin_command')
         ],[
-            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('🌧️ Sticker', callback_data='gen_pass'),
+            InlineKeyboardButton('🔗 Short URL', callback_data='urlshort'),
+            InlineKeyboardButton('⚡ Fancy Font', callback_data='source') 
+         ], [
+            InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(

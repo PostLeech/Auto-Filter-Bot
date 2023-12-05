@@ -135,7 +135,7 @@ I can't find the <b>{}</b> in my database! 🥲
 
     SOURCE_TXT = """<b>You Can Use This Feature To Change Font Style   
   
- • /font Your Text
+ ⚡️ /font Your Text
  Example:- /font TeamYourX 
   
  </b>""" 

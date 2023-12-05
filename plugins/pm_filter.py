@@ -69,6 +69,7 @@ from image.edit_5 import (  # pylint:disable=import-error
     scanlineglitch_3,
     scanlineglitch_4,
     scanlineglitch_5,
+)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)

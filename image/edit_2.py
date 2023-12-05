@@ -1,4 +1,4 @@
-from PIL import Image, ImageEnhance, ImageDraw
+from import Image, ImageEnhance, ImageDraw
 from pyrogram.enums import ChatAction
 import numpy as np
 import os

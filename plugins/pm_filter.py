@@ -631,17 +631,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.USER_COMMAND_TXT,
             reply_markup=reply_markup
         )
-        
-    elif query.data == "admin_command":
-        if query.from_user.id not in ADMINS:
-            return await query.answer("ADMINS Only!", show_alert=True)
+
+    elif query.data == "user_command":
         buttons = [[
             InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ADMIN_COMMAND_TXT,
+            text=script.USER_COMMAND_TXT,
             reply_markup=reply_markup
+        )
+        
+    elif query.data == "openai":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OPENAI_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
         )
 
     elif query.data == "source":

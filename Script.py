@@ -17,6 +17,14 @@ class script(object):
 🗂 Free Storage: <code>{}</code>
 ⏰ Uptime: <code>{}</code>"""
 
+    OPENAI_TXT = """<b>Find Solution To Any Question With ChatGPT. 
+  
+ Commands And Usage: 
+  /OpenAI Your Question  
+  
+ Note: 
+ * This Feature Work Only Support Group.</b>"""
+    
     NEW_GROUP_TXT = """#NewGroup
 ★ Title: {}
 ★ ID: <code>{}</code>

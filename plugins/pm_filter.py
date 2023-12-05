@@ -539,7 +539,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "my_about":
         buttons = [[
             InlineKeyboardButton('♻️ Status', callback_data='stats'),
-            InlineKeyboardButton('🚀 Telegraph', callback_data='stats')
+            InlineKeyboardButton('🚀 Telegraph', callback_data='tele')
         ],[
             InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
@@ -664,7 +664,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    
+    elif query.data == "tele":
+        buttons = [[
+            InlineKeyboardButton('🏄 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.TELE_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
     elif query.data.startswith("pm_settings"):
         ident, grp_id = query.data.split("#")
         settings = await get_settings(int(grp_id))

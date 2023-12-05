@@ -22,6 +22,7 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 CAP = {}
+ENABLE_SHORTLINK = ""
 
 @Client.on_callback_query(filters.regex(r"^stream"))
 async def stream_downloader(bot, query):
